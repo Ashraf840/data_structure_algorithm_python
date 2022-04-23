@@ -27,7 +27,14 @@ def binary_search(number_list, target_value):
 
 number_list = [12,15,17,19,21,24,45,67]
 
-target_num = 45
+target_num = 44
 
 result_bns = binary_search(number_list=number_list, target_value=target_num)
 print(f'The targeted value is in the index (Binary Search): {result_bns}')
+
+
+
+# [Cons]
+# This application is not capable of handling the unsorted elements in the list.
+
+# [Note]: Time complexity is not measured. Need to implement in 100k elems
