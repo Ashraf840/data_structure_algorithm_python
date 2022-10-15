@@ -6,7 +6,7 @@ target = 24
 
 def binary_search(listVal, target):
     left_index = 0
-    right_index = len(listVal)
+    right_index = len(listVal)-1  # forgot to substract 1, to define the exact list-length starting from 0
     mid_index = 0
 
     # struggle to execute a dry run
