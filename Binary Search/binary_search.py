@@ -27,7 +27,7 @@ def binary_search(number_list, target_value):
 
 number_list = [12,15,17,19,21,24,45,67]
 
-target_num = 44
+target_num = 17
 
 result_bns = binary_search(number_list=number_list, target_value=target_num)
 print(f'The targeted value is in the index (Binary Search): {result_bns}')
