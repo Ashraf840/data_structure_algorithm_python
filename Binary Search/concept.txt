@@ -1,0 +1,17 @@
+Concept (steps) of Binary Search
+
+# Find the left, right & middle index from the list.
+    - define left index to 0
+    - define right index to len(list)-1
+
+# Create a while loop w\ condition left_index STE (<=) to right_index.
+[NB]: In each iteration, the left & right index shifts according to middle idnex value.
+Basically, middle index will be used to search the target value.
+Since, in every iteration, the left & right index shifts, the middle index requires to updated accordingly.
+Thus, define middle_index inside the while loop.
+    - define middle index to (left_index+right_index)//2
+    - Check if the middle index value matches the target value. Return index if true.
+    - If middle-index-value smalller than target value,
+        + Move left_index to middle_index+1
+    - If middle-index-value larger than target value,
+        + Move right_index to middle_index-1
