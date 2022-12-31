@@ -2,9 +2,10 @@
 class Stack(object):
     def __init__(self):
         """
-        Use defined stack data structure using native list. It follows the LIFO/FILO order.
+        Use defined stack data structure using native list in Python. 
+        It follows the LIFO (Last In/First Out)/FILO (First In/Last Out) order.
         """
-        self.items = []
+        self.__items = []
     
     def push(self, item=None):
         """
@@ -12,17 +13,18 @@ class Stack(object):
         return: Void/None
         """
         if item != None:
-            self.items.append(item)
+            self.__items.append(item)
         else:
-            return None
+            # return None
+            raise TypeError("1 positional argument is missing: 'item'")
     
     def pop(self):
         """
         Remove an element from the last index of the stack. 
         If no element is available to remove, return None.
         """
-        if len(self.items):
-            self.items.pop()
+        if len(self.__items):
+            self.__items.pop()
         else:
             return None
     
@@ -31,8 +33,8 @@ class Stack(object):
         View the size/length of the stack.
         return: integer/size
         """
-        if len(self.items):
-            return len(self.items)
+        if len(self.__items):
+            return len(self.__items)
         else:
             return None
     
@@ -41,7 +43,7 @@ class Stack(object):
         View if the stack is empty or not.
         return: boolean
         """
-        if self.items != []:
+        if self.__items != []:
             return False
         else:
             return True
@@ -53,8 +55,8 @@ class Stack(object):
         If the stack is empty, return None.
         return: elemtent/None
         """
-        if len(self.items):
-            return self.items[index]
+        if len(self.__items):
+            return self.__items[index]
         else:
             return None
 
@@ -62,9 +64,10 @@ class Stack(object):
 
 
 stack = Stack()
+# stack.push()
 stack.push(10)
 stack.push(20)
 
 print(stack.isEmpty())
-# print(stack.peek())
+print(stack.peek())
 
