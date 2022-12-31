@@ -20,7 +20,10 @@ class Stack(object):
         """
         Remove an element from the rightmost end of the deque.
         """
-        self.data.pop()
+        if Stack.size(self) != None:
+            self.data.pop()
+        else:
+            raise IndexError("Cannot pop from an empty deque")
     
     def size(self):
         """
@@ -60,6 +63,9 @@ class Stack(object):
 
 
 stack = Stack()
+stack.push(10)
+stack.pop()
+# stack.pop()
 for i in range(0, 100, 10):
     stack.push(i)
 
