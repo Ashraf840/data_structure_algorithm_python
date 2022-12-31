@@ -70,4 +70,5 @@ stack.push(20)
 
 print(stack.isEmpty())
 print(stack.peek())
+print(stack.size())
 
