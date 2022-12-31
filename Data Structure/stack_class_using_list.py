@@ -2,7 +2,8 @@
 class Stack(object):
     def __init__(self):
         """
-        Use defined stack data structure using native list. It follows the LIFO/FILO order.
+        Use defined stack data structure using native list in Python. 
+        It follows the LIFO (Last In/First Out)/FILO (First In/Last Out) order.
         """
         self.items = []
     
@@ -14,7 +15,8 @@ class Stack(object):
         if item != None:
             self.items.append(item)
         else:
-            return None
+            # return None
+            raise TypeError("1 positional argument is missing: 'item'")
     
     def pop(self):
         """
@@ -62,9 +64,10 @@ class Stack(object):
 
 
 stack = Stack()
+# stack.push()
 stack.push(10)
 stack.push(20)
 
 print(stack.isEmpty())
-# print(stack.peek())
+print(stack.peek())
 
