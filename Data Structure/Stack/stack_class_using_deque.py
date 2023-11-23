@@ -1,5 +1,5 @@
 """
-It's recommended to use "deque" class to construct used-defined "stack" data structure.
+It's recommended to use "deque" class to construct user-defined "stack" data structure.
 """
 from collections import deque
 
