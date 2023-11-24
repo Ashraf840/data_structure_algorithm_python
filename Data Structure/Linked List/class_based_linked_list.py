@@ -28,6 +28,20 @@ class LinkedList:
                 n = n.ref
             n.ref = new_node
 
+    def add_after_node(self, data, x):
+        n = self.head
+        # Check for specific value in the array of linked nodes; it'll bring two conculsions: LL is empty or found the specific node
+        while n is not None:
+            if n.data == x:
+                break
+            n = n.ref
+        # Since the loop is ended, whether n will be None or come up with specific node
+        if n is None:
+            print("Node is not present in the linked list")
+        else:
+            new_node = Node(data)
+            new_node.ref = n.ref
+            n.ref = new_node
     
     def print_ll(self):
         n = self.head
@@ -43,4 +57,5 @@ ll.add_begin(10)
 ll.add_begin(20)
 ll.add_begin(30)    # The lastly added node will be the first node of the LL.
 ll.add_end(40)
+ll.add_after_node(50, 40)
 ll.print_ll()
