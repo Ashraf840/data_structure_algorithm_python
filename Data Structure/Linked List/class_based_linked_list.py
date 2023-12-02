@@ -82,6 +82,19 @@ class LinkedList:
            self.head = self.head.ref
 
 
+    def delete_end(self):
+        n = self.head
+        if n is None:
+            print("Linked list is empty!")
+        elif n.ref is None:
+            self.head = None
+        else:
+            # What if the LL contains only a single node, then the while loop below will throw an error. Thus handle the case of containing a single node.
+            while n.ref.ref is not None:
+                n = n.ref
+            n.ref = None
+
+
     def print_ll(self):
         n = self.head
         if n is None:
@@ -99,6 +112,6 @@ ll.add_begin(30)    # The lastly added node will be the first node of the LL.
 ll.add_begin(20)
 ll.add_begin(10)
 ll.add_after_node(60, 40)
-ll.add_before_node(50, 70)
-ll.delete_begin()
+ll.add_before_node(50, 70)  # Won't add 50, since there is not such node equal to 70
+ll.delete_end()
 ll.print_ll()
