@@ -74,10 +74,18 @@ class LinkedList:
                     n.ref = new_node
     
 
+    def delete_begin(self):
+        # n = self.head     # Tried using, but the node never gets removed from the beginning
+        if self.head is None:
+            print("(Delete begin): Linked list is empty! please try again later!")
+        else:
+           self.head = self.head.ref
+
+
     def print_ll(self):
         n = self.head
         if n is None:
-            print("Linked list is empty!")
+            print("(Print out the does from): Linked list is empty!")
         else:
             while n is not None:
                 print(f"{n.data} --->", end=" ")    # Better visual representation
@@ -92,4 +100,5 @@ ll.add_begin(20)
 ll.add_begin(10)
 ll.add_after_node(60, 40)
 ll.add_before_node(50, 70)
+ll.delete_begin()
 ll.print_ll()
