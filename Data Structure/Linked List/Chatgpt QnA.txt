@@ -1,0 +1,25 @@
+1. Give me some of using linked list in application.
+
+Linked lists are a fundamental data structure in computer science and have a wide range of applications. Here are some examples:
+
+Stacks and Queues: Linked lists are used to implement stacks and queues, which are abstract data types used to store and retrieve data in a specific order. In a stack, the last item added is the first item to be removed (LIFO), while in a queue, the first item added is the first item to be removed (FIFO) 1.
+
+Graphs: Linked lists are used to represent graphs, which are a collection of vertices and edges. The adjacency list representation of graphs is the most popular, which uses a linked list to store adjacent vertices 1.
+
+Dynamic memory allocation: Linked lists are used to implement dynamic memory allocation, which is the process of allocating and deallocating memory at runtime. We use a linked list of free blocks to keep track of available memory 1.
+
+Polynomial representation: Linked lists are used to represent polynomials, where each term in the polynomial is represented as a node in the list. The constants are stored in the node of the linked list 1.
+
+File systems: File systems use linked lists to represent the hierarchical structure of directories, where each directory or file is represented as a node in the list 1.
+
+Undo/Redo functionality: Many software applications implement undo/redo functionality using linked lists, where each action that can be undone is represented as a node in a doubly linked list 1.
+
+Speech recognition: Speech recognition software uses linked lists to represent the possible phonetic pronunciations of a word, where each possible pronunciation is represented as a node in the list 1.
+
+Simulation of physical systems: Linked lists can be used to simulate physical systems, where each element in the list represents a discrete point in time and the state of the system at that time 1.
+
+Task scheduling: Operating systems use linked lists to manage task scheduling, where each process waiting to be executed is represented as a node in the list 1.
+
+Image processing: Linked lists can be used to represent images, where each pixel is represented as a node in the list 1.
+
+I hope this helps! Let me know if you have any further questions.

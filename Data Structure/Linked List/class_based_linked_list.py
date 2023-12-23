@@ -14,7 +14,7 @@ class LinkedList:
         self.head = None    # Starting point for the LL nodes
     
     def add_begin(self, data):
-        new_node = Node(data)
+        new_node = Node(data)       # Initialize an un-attached node.
         new_node.ref = self.head    # If previously created node is existed, then assign the object's mem-location as the new_node's ref attr. Basically, we can check using the if-condition whether the linked list is empty ot not, then in the empty block, the new_node would only be assigned to the self.head & in the non-empty block firstly assing the self.head obj to new.node's ref, then assign the new_node to "self.head".
         self.head = new_node        # Since the node will be added at the beginning, assign the head with the newly created node object.
     
