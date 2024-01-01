@@ -1,4 +1,5 @@
 # Six ways of adding elements at the beginning of a string
+# Ref article: https://dev.to/ra1nbow1/8-ways-to-add-an-element-to-the-beginning-of-a-list-and-string-in-python-925#:~:text=The%20insert()%20method%20takes,as%20the%20first%20parameter%201%20.
 # 1. By concatenating two strings togather maintaining the correct order.
 # 2. By using f-string interpolation.
 # 3. By using the "%" operator into string interpolation.
