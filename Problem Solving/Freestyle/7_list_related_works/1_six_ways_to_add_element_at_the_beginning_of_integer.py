@@ -1,4 +1,4 @@
-# Four ways to add element at the beginning of the list
+# Six ways to add element at the beginning of the list
 # 1. By using "insert()" method.
 # 2. By concatenating two lists together. The single elem which will be added at the beginning of the list needs to be converted into a single-elem-list before concatenation.
 # 3. By using "append()" method of the single element (converted to single-elem-list) while inside a for-loop whose iteration number will be determined on the other list-length.
