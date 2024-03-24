@@ -17,7 +17,14 @@ class Tree:
             node.left=self.insert(node.left, data)
         else:
             node.right=self.insert(node.right, data)
-        return node
+        return node   # If i don't return the node, then it's not going to assign in the parent node's left/right side
+
+    def traverse_inorder(self, node):
+        """Traverse Order: (Left, Root, Right) node"""
+        if node is not None:
+            self.traverse_inorder(node.left)
+            print(node.data)
+            self.traverse_inorder(node.right)
 
 bst = Tree()
 node = bst.createNode(5)
@@ -30,4 +37,5 @@ bst.insert(node, 20)
 bst.insert(node, 30)
 bst.insert(node, 6)
 bst.insert(node, 8)
-print(bst)
+
+bst.traverse_inorder(node)
