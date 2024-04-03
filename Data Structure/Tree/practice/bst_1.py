@@ -15,7 +15,7 @@ class Tree:
             node.left=self.insert(node.left, data)
         else:
             node.right=self.insert(node.right, data)
-        return node     # Return the child nodes to their subsequent parents after populating left & right side of the node
+        return node     # By returning, by the modified node it updates the original tree-object (bst) everytime the insert method is called, thus the object remains a valid Binary Search Tree
 
     def traverse_inorder(self, node):
         if node is not None:
